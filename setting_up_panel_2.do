@@ -3,7 +3,7 @@
 /****************************************************************************
 * File name: setting_up_panel_2.do
 * Author(s): Sze, Jeremy
-* Date: 11/7/2018
+* Date: 11/11/2018
 * Description: 
 * Setting up the observations, merging in the different sources of the data
 *
@@ -51,9 +51,18 @@ codebook nearest_LTC
 codebook nearest_bikeroute 
 codebook nearest_truckroute
 
+
 //Issue with the calculations of nearests for a few intersections
 // drop them for the time being
 drop if mi(nearest_Street)
+
+// Create borough dummies
+tab bname
+gen bronx = (bname == "Bronx")
+gen brooklyn = (bname == "Brooklyn")
+gen manhattan = (bname == "Manhattan")
+gen queens = (bname == "Queens")
+gen statenisland = (bname == "Staten Island")
 
 // Merge in Lion Street map data - no. of lanes
 mmerge nearest_Street using "..\working_data\nyc_lionstreet.dta", ///

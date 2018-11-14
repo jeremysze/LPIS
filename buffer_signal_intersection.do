@@ -28,4 +28,4 @@ egen j = rank(LPIS_ID), track by(intersection_ID)
 
 reshape wide LPIS_ID, i(intersection_ID) j(j)
 
-save "..\working_data\intersection_2000ft_LPIS_reshaped.dta"
+save "..\working_data\intersection_2000ft_LPIS_reshaped.dta",replace

@@ -19,11 +19,11 @@
 clear
 
 // There are 13,277 signal intersections
-di 12*7*13277
-set obs 1115268
+di 12*7*13278
+set obs 1115352
 
 
-egen intersection_id = seq(), from(1) to(13277)
+egen intersection_id = seq(), from(0) to(13277)
 sort intersection_id
 
 egen month = seq(), from(1) to (12) by(intersection_id)
@@ -41,8 +41,8 @@ drop if month > 9 & year == 2018
 // Intersection level data
 mmerge intersection_id using "..\working_data\signal_intersection.dta", ///
 type(n:1) ///
-unmatched(master) ///
-umatch(intersection_ID)
+unmatched(using) ///
+umatch(intersection_id)
 
 codebook intersection_id
 codebook nearest_LPIS
@@ -51,10 +51,6 @@ codebook nearest_LTC
 codebook nearest_bikeroute 
 codebook nearest_truckroute
 
-
-//Issue with the calculations of nearests for a few intersections
-// drop them for the time being
-drop if mi(nearest_Street)
 
 // Create borough dummies
 tab bname
@@ -203,10 +199,11 @@ sum LPIS_install_month, detail format
 tab flag_LPIS if LPIS_install_month < tm(2013m1)
 tab intersection_id if LPIS_install_month < tm(2013m1) & flag_LPIS_ever == 1
 drop if LPIS_install_month < tm(2013m1) & flag_LPIS_ever == 1
-* 17,100 observations deleted
-duplicates tag intersection_id, gen(dup)
-tab dup
-drop dup
+* 16,950 observations deleted
+
+duplicates tag intersection_id, gen(dup2)
+tab dup2
+drop dup2
 
 label variable flag_LPIS "Indicates the intersection at the time they became an LPIS intervention"
 label variable flag_LPIS_ever "Indicates the intersection if they ever received LPIS intervention"
@@ -258,16 +255,15 @@ replace number_park_lanes = 0 if mi_number_park_lanes == 1
 mmerge intersection_id using "..\working_data\intersection_2000ft_LPIS_reshaped.dta", ///
 type(n:1) ///
 unmatched(master) ///
-umatch(intersection_ID)
+umatch(intersection_id)
+
 
 
 // Outcomes data
 mmerge month year intersection_id using "..\working_data\collision_monthly.dta", ///
 type(1:1) ///
-unmatched(master) 
-
-// Reason why there are some in the using that were not matched is because
-// we dropped some intersections in the steps above
+unmatched(master) ///
+missing(nomatch)
 
 sort intersection_id year month
 

@@ -157,7 +157,8 @@ replace flag_street_improv = 0 if flag_street_improv == 1 & monthly < street_imp
 mmerge nearest_LPIS using "..\working_data\VZV_LPIS_data.dta", ///
 type(n:1) ///
 unmatched(master) ///
-umatch(LPIS_ID) 
+umatch(LPIS_ID) ///
+ukeep(date_insta)
 
 drop _merge
 gen LPIS_install_date = date(date_insta, "YMD")
@@ -338,14 +339,6 @@ label variable day_flag_collision " At least one collision occurred that month b
 
 drop _merge
 
-
-split geometry, gen(coordinate)
-replace coordinate2 = subinstr(coordinate2,"(","",1)
-replace coordinate3 = subinstr(coordinate3,")","",1)
-destring coordinate2, replace
-destring coordinate3, replace
-
-drop geometry
 
 
 save "..\working_data\analytical_file_panel.dta",replace

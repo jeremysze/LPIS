@@ -28,7 +28,7 @@ global time_variant_var 	bike_route_tv /*flag_street_improv*/ flag_left_turn
 global outcome_var 			collision_count flag_collision personsinjured pedestriansinjured
 
 // Descriptive statistics
-/*
+
 preserve
 global location_var 		bronx brooklyn manhattan queens statenisland
 keep intersection_id flag_LPIS_ever $location_var $distance_var $road_var
@@ -39,10 +39,10 @@ global weight_used "treated"	// Weights
 global varlist "$location_var $distance_var $road_var"		// Variables list
 global filename "table1"		// Name of file
 cd "..\working_files\"
-run "Table_1_descriptives.do"
+run "Z:\GEDI-WISE-INVESTIGATORS\Gediwise Do Files\tools\Table_1_descriptives.do"
 di "Saved"
 restore
-*/
+
 
 // Calculate weights on control intersections
 /*

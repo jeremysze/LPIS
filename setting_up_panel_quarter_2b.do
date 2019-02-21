@@ -236,17 +236,24 @@ drop if LPIS_install_qt < tq(2013q1) & flag_LPIS_ever == 1
 * 5,650 observations deleted
 
 // Decay effect
-bysort intersection_id: gen flag_LPIS_1yr = 1 if quarterly == (LPIS_install_qt+4)
+bysort intersection_id: gen flag_LPIS_1yr = 1 if quarterly == (LPIS_install_qt+1)
+bysort intersection_id: replace flag_LPIS_1yr = 1 if quarterly == (LPIS_install_qt+2)
+bysort intersection_id: replace flag_LPIS_1yr = 1 if quarterly == (LPIS_install_qt+3)
+bysort intersection_id: replace flag_LPIS_1yr = 1 if quarterly == (LPIS_install_qt+4)
 replace flag_LPIS_1yr = 0 if missing(flag_LPIS_1yr)
 replace flag_LPIS_1yr = 0 if flag_LPIS_ever == 0
 
-bysort intersection_id: gen flag_LPIS_2yr = 1 if quarterly == (LPIS_install_qt+8)
+bysort intersection_id: gen flag_LPIS_2yr = 1 if quarterly == (LPIS_install_qt+5)
+bysort intersection_id: replace flag_LPIS_2yr = 1 if quarterly == (LPIS_install_qt+6)
+bysort intersection_id: replace flag_LPIS_2yr = 1 if quarterly == (LPIS_install_qt+7)
+bysort intersection_id: replace flag_LPIS_2yr = 1 if quarterly == (LPIS_install_qt+8)
 replace flag_LPIS_2yr = 0 if missing(flag_LPIS_2yr)
 replace flag_LPIS_2yr = 0 if flag_LPIS_ever == 0
 
-bysort intersection_id: gen flag_LPIS_3yr = 1 if quarterly == (LPIS_install_qt+12)
-replace flag_LPIS_3yr = 0 if missing(flag_LPIS_3yr)
-replace flag_LPIS_3yr = 0 if flag_LPIS_ever == 0
+bysort intersection_id: gen flag_LPIS_3yrup = 1 if quarterly == (LPIS_install_qt+9)
+bysort intersection_id: replace flag_LPIS_3yrup = 1 if flag_LPIS_3yrup[_n-1] == 1
+replace flag_LPIS_3yrup = 0 if missing(flag_LPIS_3yrup)
+replace flag_LPIS_3yrup = 0 if flag_LPIS_ever == 0
 
 // Checking that panel is strongly balanced
 duplicates tag intersection_id, gen(dup2)

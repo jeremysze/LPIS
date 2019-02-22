@@ -236,6 +236,7 @@ drop if LPIS_install_qt < tq(2013q1) & flag_LPIS_ever == 1
 * 5,650 observations deleted
 
 // Decay effect
+sort intersection_id quarterly
 bysort intersection_id: gen flag_LPIS_1yr = 1 if quarterly == (LPIS_install_qt+1)
 bysort intersection_id: replace flag_LPIS_1yr = 1 if quarterly == (LPIS_install_qt+2)
 bysort intersection_id: replace flag_LPIS_1yr = 1 if quarterly == (LPIS_install_qt+3)

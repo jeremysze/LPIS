@@ -255,6 +255,17 @@ bysort intersection_id: replace flag_LPIS_3yrup = 1 if flag_LPIS_3yrup[_n-1] == 
 replace flag_LPIS_3yrup = 0 if missing(flag_LPIS_3yrup)
 replace flag_LPIS_3yrup = 0 if flag_LPIS_ever == 0
 
+bysort intersection_id: gen flag_LPIS_2yrup = 1 if quarterly == (LPIS_install_qt+5)
+bysort intersection_id: replace flag_LPIS_2yrup = 1 if flag_LPIS_2yrup[_n-1] == 1
+replace flag_LPIS_2yrup = 0 if missing(flag_LPIS_2yrup)
+replace flag_LPIS_2yrup = 0 if flag_LPIS_ever == 0
+
+//Continous decay effect
+gen flag_LPIS_since = quarterly - LPIS_install_qt  if flag_LPIS_ever == 1
+replace flag_LPIS_since = 0 if flag_LPIS_since < 0 & flag_LPIS_ever == 1
+replace flag_LPIS_since = 0 if flag_LPIS_ever == 0
+gen flag_LPIS_since_sq = flag_LPIS_since*flag_LPIS_since
+
 // Checking that panel is strongly balanced
 duplicates tag intersection_id, gen(dup2)
 tab dup2

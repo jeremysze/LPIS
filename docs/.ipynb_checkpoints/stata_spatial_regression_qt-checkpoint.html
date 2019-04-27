@@ -838,8 +838,9 @@ spset, coordsys(latlong, miles) modify
 <a class="reference internal image-reference" href="../_images/.ipynb_checkpoints_stata_spatial_regression_qt-checkpoint_19_0.svg"><img alt="../_images/.ipynb_checkpoints_stata_spatial_regression_qt-checkpoint_19_0.svg" height="954" src="../_images/.ipynb_checkpoints_stata_spatial_regression_qt-checkpoint_19_0.svg" width="600" /></a>
 </div>
 </div>
-<div class="section" id="Calculate-Contiguity-and-Inverse-Distance-matrix">
-<h3>Calculate Contiguity and Inverse Distance matrix<a class="headerlink" href="#Calculate-Contiguity-and-Inverse-Distance-matrix" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="Calculate-Contiguity-matrix">
+<h2>Calculate Contiguity matrix<a class="headerlink" href="#Calculate-Contiguity-matrix" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>These are commented out because they were calculated before.</li>
 </ul>
@@ -856,38 +857,6 @@ spset, coordsys(latlong, miles) modify
 <span class="cm">spmatrix save W using &quot;contiguity_W.stswm&quot;</span>
 <span class="cm">*/</span>
 </pre></div>
-</div>
-</div>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
-</pre></div>
-</div>
-<div class="input_area highlight-stata notranslate"><div class="highlight"><pre>
-<span></span><span class="cm">/*</span>
-<span class="cm">spmatrix export W using &quot;contiguity_W&quot;</span>
-<span class="cm">clear</span>
-<span class="cm">import delimited using &quot;contiguity_W.txt&quot; , delimiters(&quot; &quot;)</span>
-<span class="cm">drop if mi(v2)</span>
-<span class="cm">save &quot;contiguity_W.dta&quot;</span>
-<span class="cm">*/</span>
-</pre></div>
-</div>
-</div>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
-</pre></div>
-</div>
-<div class="input_area highlight-stata notranslate"><div class="highlight"><pre>
-<span></span><span class="c1">// Create Matrix M</span>
-<span class="cm">/*</span>
-<span class="cm">cd &quot;..\working_data\analytical_panel_shapefile\&quot;</span>
-<span class="cm">spmatrix create idistance M if quarter==3 &amp; year == 2012</span>
-<span class="cm">cd &quot;..\&quot;</span>
-<span class="cm">cd &quot;..\working_data\&quot;</span>
-<span class="cm">spmatrix save M using &quot;idistance_M.stswm&quot;</span>
-<span class="cm">*/</span>
-</pre></div>
-</div>
 </div>
 </div>
 <div class="section" id="Use-saved-matrix">
@@ -1305,8 +1274,9 @@ C:\Users\jerem\Box Sync\Policy Evaluation\manuscripts
 </pre></div></div>
 </div>
 </div>
+</div>
 <div class="section" id="Visualization">
-<h3>Visualization<a class="headerlink" href="#Visualization" title="Permalink to this headline">¶</a></h3>
+<h2>Visualization<a class="headerlink" href="#Visualization" title="Permalink to this headline">¶</a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
 </pre></div>
@@ -1332,7 +1302,7 @@ C:\Users\jerem\Box Sync\Policy Evaluation\working_data\analytical_panel_shapefil
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<a class="reference internal image-reference" href="../_images/.ipynb_checkpoints_stata_spatial_regression_qt-checkpoint_38_1.svg"><img alt="../_images/.ipynb_checkpoints_stata_spatial_regression_qt-checkpoint_38_1.svg" height="954" src="../_images/.ipynb_checkpoints_stata_spatial_regression_qt-checkpoint_38_1.svg" width="600" /></a>
+<a class="reference internal image-reference" href="../_images/.ipynb_checkpoints_stata_spatial_regression_qt-checkpoint_36_1.svg"><img alt="../_images/.ipynb_checkpoints_stata_spatial_regression_qt-checkpoint_36_1.svg" height="954" src="../_images/.ipynb_checkpoints_stata_spatial_regression_qt-checkpoint_36_1.svg" width="600" /></a>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -1403,7 +1373,7 @@ grmap avg_collisions, <span class="nf">t</span>(<span class="m">210</span>) clme
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<a class="reference internal image-reference" href="../_images/.ipynb_checkpoints_stata_spatial_regression_qt-checkpoint_42_1.svg"><img alt="../_images/.ipynb_checkpoints_stata_spatial_regression_qt-checkpoint_42_1.svg" height="954" src="../_images/.ipynb_checkpoints_stata_spatial_regression_qt-checkpoint_42_1.svg" width="600" /></a>
+<a class="reference internal image-reference" href="../_images/.ipynb_checkpoints_stata_spatial_regression_qt-checkpoint_40_1.svg"><img alt="../_images/.ipynb_checkpoints_stata_spatial_regression_qt-checkpoint_40_1.svg" height="954" src="../_images/.ipynb_checkpoints_stata_spatial_regression_qt-checkpoint_40_1.svg" width="600" /></a>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -1469,7 +1439,7 @@ interventio |
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<a class="reference internal image-reference" href="../_images/.ipynb_checkpoints_stata_spatial_regression_qt-checkpoint_44_1.svg"><img alt="../_images/.ipynb_checkpoints_stata_spatial_regression_qt-checkpoint_44_1.svg" height="954" src="../_images/.ipynb_checkpoints_stata_spatial_regression_qt-checkpoint_44_1.svg" width="600" /></a>
+<a class="reference internal image-reference" href="../_images/.ipynb_checkpoints_stata_spatial_regression_qt-checkpoint_42_1.svg"><img alt="../_images/.ipynb_checkpoints_stata_spatial_regression_qt-checkpoint_42_1.svg" height="954" src="../_images/.ipynb_checkpoints_stata_spatial_regression_qt-checkpoint_42_1.svg" width="600" /></a>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -1483,7 +1453,7 @@ interventio |
 </div>
 </div>
 <div class="section" id="Base-line-averages">
-<h3>Base line averages<a class="headerlink" href="#Base-line-averages" title="Permalink to this headline">¶</a></h3>
+<h2>Base line averages<a class="headerlink" href="#Base-line-averages" title="Permalink to this headline">¶</a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[38]:
 </pre></div>
@@ -1694,7 +1664,7 @@ C:\Users\jerem\Box Sync\Policy Evaluation
 </div>
 </div>
 <div class="section" id="Non-spatial-Models">
-<h3>Non-spatial Models<a class="headerlink" href="#Non-spatial-Models" title="Permalink to this headline">¶</a></h3>
+<h2>Non-spatial Models<a class="headerlink" href="#Non-spatial-Models" title="Permalink to this headline">¶</a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
 </pre></div>
@@ -3190,7 +3160,7 @@ dir : seeout
 </div>
 </div>
 <div class="section" id="Spatial-Lag-Model">
-<h3>Spatial Lag Model<a class="headerlink" href="#Spatial-Lag-Model" title="Permalink to this headline">¶</a></h3>
+<h2>Spatial Lag Model<a class="headerlink" href="#Spatial-Lag-Model" title="Permalink to this headline">¶</a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[44]:
 </pre></div>
@@ -4298,7 +4268,7 @@ total        |
 </div>
 </div>
 <div class="section" id="Spatial-Error-Model">
-<h3>Spatial Error Model<a class="headerlink" href="#Spatial-Error-Model" title="Permalink to this headline">¶</a></h3>
+<h2>Spatial Error Model<a class="headerlink" href="#Spatial-Error-Model" title="Permalink to this headline">¶</a></h2>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[57]:
 </pre></div>
@@ -5185,7 +5155,7 @@ dir : seeout
 </div>
 </div>
 <div class="section" id="Spatial-Lag-and-Error-Model">
-<h3>Spatial Lag and Error Model<a class="headerlink" href="#Spatial-Lag-and-Error-Model" title="Permalink to this headline">¶</a></h3>
+<h2>Spatial Lag and Error Model<a class="headerlink" href="#Spatial-Lag-and-Error-Model" title="Permalink to this headline">¶</a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[63]:
 </pre></div>
@@ -5691,7 +5661,6 @@ flag_priorityinters |
 <div class="input_area highlight-stata notranslate"><div class="highlight"><pre>
 <span></span>spxtregress personsinjured i<span class="m">.</span>flag_LPIS <span class="vg">$time_variant_var</span> <span class="vg">$time_var</span> <span class="vg">$time_trend</span>, fe dvarlag(W) errorlag(W)
 </pre></div>
-</div>
 </div>
 </div>
 </div>

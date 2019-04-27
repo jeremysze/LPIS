@@ -84,11 +84,11 @@
 <li class="toctree-l1"><a class="reference internal" href="Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals.html">An Evaluation of the Impact of Leading Pedestrian Interval Signals in NYC</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stata_analysis_qt_panel.html">Stata Analysis of NYC Leading Pedestrian Interval Signal (LPIs)</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Stata Spatial Analysis of Manhattan Leading Pedestrian Interval Signal (LPIs)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#Spatial-Set">Spatial Set</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#Calculate-Contiguity-matrix">Calculate Contiguity matrix</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#Use-saved-matrix">Use saved matrix</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="#Declare-spatial">Declare spatial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Calculate-Contiguity-matrix">Calculate Contiguity matrix</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Use-saved-matrix">Use saved matrix</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Merge-in-the-panel-data">Merge in the panel data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Declare-panel">Declare panel</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#Visualization">Visualization</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#Base-line-averages">Base line averages</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#Non-spatial-Models">Non-spatial Models</a></li>
@@ -801,8 +801,8 @@ Sorted by: _ID
      Note: Dataset has changed since last saved.
 </pre></div></div>
 </div>
-<div class="section" id="Spatial-Set">
-<h2>Spatial Set<a class="headerlink" href="#Spatial-Set" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="Declare-spatial">
+<h2>Declare spatial<a class="headerlink" href="#Declare-spatial" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>This lets Stata know that the dataset is spatial</li>
 </ul>
@@ -873,8 +873,9 @@ spset, coordsys(latlong, miles) modify
 </pre></div>
 </div>
 </div>
+</div>
 <div class="section" id="Use-saved-matrix">
-<h3>Use saved matrix<a class="headerlink" href="#Use-saved-matrix" title="Permalink to this headline">¶</a></h3>
+<h2>Use saved matrix<a class="headerlink" href="#Use-saved-matrix" title="Permalink to this headline">¶</a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
@@ -1003,6 +1004,9 @@ C:\Users\jerem\Box Sync\Policy Evaluation\dofiles
 </pre></div>
 </div>
 </div>
+</div>
+<div class="section" id="Merge-in-the-panel-data">
+<h2>Merge in the panel data<a class="headerlink" href="#Merge-in-the-panel-data" title="Permalink to this headline">¶</a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
 </pre></div>
@@ -1251,6 +1255,9 @@ Sorted by:
 </pre></div>
 </div>
 </div>
+</div>
+<div class="section" id="Declare-panel">
+<h2>Declare panel<a class="headerlink" href="#Declare-panel" title="Permalink to this headline">¶</a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
 </pre></div>
@@ -1288,7 +1295,6 @@ C:\Users\jerem\Box Sync\Policy Evaluation\manuscripts
 </pre></div></div>
 </div>
 </div>
-</div>
 <div class="section" id="Visualization">
 <h2>Visualization<a class="headerlink" href="#Visualization" title="Permalink to this headline">¶</a></h2>
 <div class="nbinput docutils container">
@@ -1316,7 +1322,7 @@ C:\Users\jerem\Box Sync\Policy Evaluation\working_data\analytical_panel_shapefil
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<a class="reference internal image-reference" href="_images/stata_spatial_regression_qt_36_1.svg"><img alt="_images/stata_spatial_regression_qt_36_1.svg" height="954" src="_images/stata_spatial_regression_qt_36_1.svg" width="600" /></a>
+<a class="reference internal image-reference" href="_images/stata_spatial_regression_qt_38_1.svg"><img alt="_images/stata_spatial_regression_qt_38_1.svg" height="954" src="_images/stata_spatial_regression_qt_38_1.svg" width="600" /></a>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -1387,7 +1393,7 @@ grmap avg_collisions, <span class="nf">t</span>(<span class="m">210</span>) clme
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<a class="reference internal image-reference" href="_images/stata_spatial_regression_qt_40_1.svg"><img alt="_images/stata_spatial_regression_qt_40_1.svg" height="954" src="_images/stata_spatial_regression_qt_40_1.svg" width="600" /></a>
+<a class="reference internal image-reference" href="_images/stata_spatial_regression_qt_42_1.svg"><img alt="_images/stata_spatial_regression_qt_42_1.svg" height="954" src="_images/stata_spatial_regression_qt_42_1.svg" width="600" /></a>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -1453,7 +1459,7 @@ interventio |
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<a class="reference internal image-reference" href="_images/stata_spatial_regression_qt_42_1.svg"><img alt="_images/stata_spatial_regression_qt_42_1.svg" height="954" src="_images/stata_spatial_regression_qt_42_1.svg" width="600" /></a>
+<a class="reference internal image-reference" href="_images/stata_spatial_regression_qt_44_1.svg"><img alt="_images/stata_spatial_regression_qt_44_1.svg" height="954" src="_images/stata_spatial_regression_qt_44_1.svg" width="600" /></a>
 </div>
 </div>
 <div class="nboutput nblast docutils container">

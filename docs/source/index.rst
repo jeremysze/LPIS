@@ -1,6 +1,6 @@
 Jeremy J. Sze's Masters Thesis Documentation
 ===========================================
-I used sphinx with the nbsphinx extension to documentment my Jupyter Notebooks (Python, SOS, Stata_kernel). 
+I used sphinx with the nbsphinx extension to document my thesis's Jupyter Notebooks (Python, SOS, Stata_kernel).
 
 
 Contact: Jeremy.Sze@outlook.com

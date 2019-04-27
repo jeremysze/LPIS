@@ -11,7 +11,6 @@ Contact: Jeremy.Sze@outlook.com
    :maxdepth: 2
    :caption: Contents:
 
-   intro
    Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals.ipynb
    stata_analysis_qt_panel.ipynb
    stata_spatial_regression_qt.ipynb

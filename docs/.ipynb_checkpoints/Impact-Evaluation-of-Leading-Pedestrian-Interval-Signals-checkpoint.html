@@ -17,25 +17,24 @@
   
 
   
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
     
-    <script type="text/javascript" src="_static/js/theme.js"></script>
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
 
     
 
   
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Welcome to LPIS Evaluation’s documentation!" href="index.html" /> 
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -49,7 +48,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home"> LPIS Evaluation
+            <a href="../index.html" class="icon icon-home"> LPIS Evaluation
           
 
           
@@ -62,7 +61,7 @@
 
           
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
@@ -80,74 +79,8 @@
             
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">An Evaluation of the Impact of Leading Pedestrian Interval Signals in NYC</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#Abstract">Abstract</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#Acknowledgements">Acknowledgements</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#Contents">Contents</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#1.-Signal-intersection">1. Signal intersection</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#About-“signal_controllers.csv”">About “signal_controllers.csv”</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#2.-Leading-Pedestrian-Interval-Signals-(LPIs)">2. Leading Pedestrian Interval Signals (LPIs)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#3.-Linking-Signal-intersection-to-other-data">3. Linking Signal intersection to other data</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#3.a.-Signal-Intersections">3.a. Signal Intersections</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#3.b.-Leading-Pedestrian-Signal-Interval">3.b. Leading Pedestrian Signal Interval</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#3.c.-School-shapefile">3.c. School shapefile</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#3.d.-Vision-Zero-Left-Turn-Calming-intervention">3.d. Vision Zero Left Turn Calming intervention</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#3.e.-Vision-Zero-Street-Improvement">3.e. Vision Zero Street Improvement</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#3.f.-Bike-Routes">3.f. Bike Routes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#3.g.-Borough">3.g. Borough</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#3.h.-Priority-Intersections">3.h. Priority Intersections</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#3.i.-Safe-Streets-for-Seniors">3.i. Safe Streets for Seniors</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#4.-NYPD-Motor-Vehicle-Collision-data">4. NYPD Motor Vehicle Collision data</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#4.a.-download">4.a. download</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#4.b.-clean">4.b. clean</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#4.c.-link-to-signal-intersection">4.c. link to signal intersection</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#5.-Calculate-collision-outcomes">5. Calculate collision outcomes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#6.-Set-up-Quarterly-Panel-data">6. Set up Quarterly Panel data</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#6.a.-Merge-in-Intersection-Data">6.a. Merge in Intersection Data</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#6.b.-Create-borough-dummies">6.b. Create borough dummies</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#6.c.-Nearest-Bike-Route">6.c. Nearest Bike Route</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#Determine-if-collision-occured-on-bike-route">Determine if collision occured on bike route</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#6.d.-Left-Turn-Calming-Intervention">6.d. Left Turn Calming Intervention</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#Matching-intersection-to-closest-left-turn-calming-intervention">Matching intersection to closest left turn calming intervention</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#6.e.-Street-Improvement-Project-intervention">6.e. Street Improvement Project intervention</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#Matching-intersection-to-closest-street-improvement-project">Matching intersection to closest street improvement project</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#6.f.-Leading-Pedestrian-Interval-Signal">6.f. Leading Pedestrian Interval Signal</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#Matching-intersection-to-closest-leading-pedestrian-interval-signal">Matching intersection to closest leading pedestrian interval signal</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#Problem:-Certain-LPIs-intersections-had-been-install-before-collision-data">Problem: Certain LPIs intersections had been install before collision data</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#6.g.-Safe-Streets-for-Seniors">6.g. Safe Streets for Seniors</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#6.h.-Priority-Intersection">6.h. Priority Intersection</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#6.i.-School-intersection/crossing">6.i. School intersection/crossing</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#6.j.-Decay-effect">6.j. Decay effect</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#6.k.-Panel-is-strongly-balanced">6.k. Panel is strongly balanced</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#6.l.-Merge-outcomes-data">6.l. Merge outcomes data</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#6.m.-Fill-in-missing-information">6.m. Fill in missing information</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#7.-Convert-analytical-panel-data-into-shapefile">7. Convert analytical panel data into shapefile</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#8.-Thiessen-Polygons">8. Thiessen Polygons</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#8.a.-Voronoi">8.a. Voronoi</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#8.b.-Spatial-Autocorrelation">8.b. Spatial Autocorrelation</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#9.-Non-spatial-Analysis">9. Non-spatial Analysis</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#10.-Spatial-Analysis">10. Spatial Analysis</a></li>
-</ul>
-</li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals.html">An Evaluation of the Impact of Leading Pedestrian Interval Signals in NYC</a></li>
 </ul>
 
             
@@ -162,7 +95,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">LPIS Evaluation</a>
+          <a href="../index.html">LPIS Evaluation</a>
         
       </nav>
 
@@ -191,7 +124,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="index.html">Docs</a> &raquo;</li>
+      <li><a href="../index.html">Docs</a> &raquo;</li>
         
       <li>An Evaluation of the Impact of Leading Pedestrian Interval Signals in NYC</li>
     
@@ -199,7 +132,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals.ipynb.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/.ipynb_checkpoints/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals-checkpoint.ipynb.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -816,7 +749,7 @@ C:\Users\jerem
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_21_1.png" src="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_21_1.png" />
+<img alt="../_images/.ipynb_checkpoints_Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals-checkpoint_21_1.png" src="../_images/.ipynb_checkpoints_Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals-checkpoint_21_1.png" />
 </div>
 </div>
 <p>First, we have to check the CRS (coordinate reference system) of the shapefile. This is important because all the other shapefiles have to be on the same projection in order to do spatial joins and identify nearest neighbors. For more information on projections, you can watch this <a class="reference external" href="https://youtu.be/KUF_Ckv8HbE">short video</a> and read this <a class="reference external" href="https://www.earthdatascience.org/courses/earth-analytics-python/spatial-data-vector-shapefiles/intro-to-coordinate-reference-systems-python/">document</a>
@@ -892,7 +825,7 @@ from <a class="reference external" href="https://www.earthdatascience.org">Earth
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_30_1.png" src="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_30_1.png" />
+<img alt="../_images/.ipynb_checkpoints_Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals-checkpoint_30_1.png" src="../_images/.ipynb_checkpoints_Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals-checkpoint_30_1.png" />
 </div>
 </div>
 <p>If you look at both plots again, you will notice that the axes labels are different. This is due to the different CRS.</p>
@@ -5211,7 +5144,7 @@ mi_latlong |                                     year
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_202_1.png" src="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_202_1.png" />
+<img alt="../_images/.ipynb_checkpoints_Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals-checkpoint_202_1.png" src="../_images/.ipynb_checkpoints_Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals-checkpoint_202_1.png" />
 </div>
 </div>
 <div class="nbinput nblast docutils container">
@@ -5263,7 +5196,7 @@ mi_latlong |                                     year
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_206_0.png" src="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_206_0.png" />
+<img alt="../_images/.ipynb_checkpoints_Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals-checkpoint_206_0.png" src="../_images/.ipynb_checkpoints_Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals-checkpoint_206_0.png" />
 </div>
 </div>
 <div class="nbinput docutils container">
@@ -8743,7 +8676,7 @@ result          file | &lt;data in memory not named&gt;
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_336_0.png" src="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_336_0.png" />
+<img alt="../_images/.ipynb_checkpoints_Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals-checkpoint_336_0.png" src="../_images/.ipynb_checkpoints_Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals-checkpoint_336_0.png" />
 </div>
 </div>
 <p>The shapefile is required to calculate contiguity matrix in Stata</p>
@@ -9122,7 +9055,7 @@ result          file | &lt;data in memory not named&gt;
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_360_0.png" src="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_360_0.png" />
+<img alt="../_images/.ipynb_checkpoints_Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals-checkpoint_360_0.png" src="../_images/.ipynb_checkpoints_Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals-checkpoint_360_0.png" />
 </div>
 </div>
 <p>Problem here is that the voronoi polygons extends far out from NYC’s boundaries. Therefore, we will use <code class="docutils literal notranslate"><span class="pre">geopandas</span></code>’s <code class="docutils literal notranslate"><span class="pre">overlay</span></code> to “cut” the borough shape out.</p>
@@ -9259,7 +9192,7 @@ dtype: int64
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_371_0.png" src="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_371_0.png" />
+<img alt="../_images/.ipynb_checkpoints_Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals-checkpoint_371_0.png" src="../_images/.ipynb_checkpoints_Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals-checkpoint_371_0.png" />
 </div>
 </div>
 <div class="nbinput docutils container">
@@ -9385,7 +9318,7 @@ dtype: int64
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_380_0.png" src="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_380_0.png" />
+<img alt="../_images/.ipynb_checkpoints_Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals-checkpoint_380_0.png" src="../_images/.ipynb_checkpoints_Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals-checkpoint_380_0.png" />
 </div>
 </div>
 <div class="nbinput docutils container">
@@ -9408,7 +9341,7 @@ dtype: int64
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_381_0.png" src="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_381_0.png" />
+<img alt="../_images/.ipynb_checkpoints_Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals-checkpoint_381_0.png" src="../_images/.ipynb_checkpoints_Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals-checkpoint_381_0.png" />
 </div>
 </div>
 <div class="nbinput docutils container">
@@ -9431,7 +9364,7 @@ dtype: int64
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_382_0.png" src="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_382_0.png" />
+<img alt="../_images/.ipynb_checkpoints_Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals-checkpoint_382_0.png" src="../_images/.ipynb_checkpoints_Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals-checkpoint_382_0.png" />
 </div>
 </div>
 </div>
@@ -9459,13 +9392,6 @@ dtype: int64
            
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-      
-        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to LPIS Evaluation’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>

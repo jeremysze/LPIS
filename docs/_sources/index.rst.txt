@@ -10,7 +10,7 @@ Welcome to LPIS Evaluation's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-
+   Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals.ipynb
 
 Indices and tables
 ==================

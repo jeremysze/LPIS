@@ -11,6 +11,8 @@ Welcome to LPIS Evaluation's documentation!
    :caption: Contents:
 
    Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals.ipynb
+   stata_analysis_qt_panel.ipynb
+   stata_spatial_regression_qt.ipynb
 
 Indices and tables
 ==================

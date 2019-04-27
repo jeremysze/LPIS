@@ -35,6 +35,7 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Stata Analysis of NYC Leading Pedestrian Interval Signal (LPIs)" href="stata_analysis_qt_panel.html" />
     <link rel="prev" title="Welcome to LPIS Evaluation’s documentation!" href="index.html" /> 
 </head>
 
@@ -144,10 +145,12 @@
 <li class="toctree-l3"><a class="reference internal" href="#8.b.-Spatial-Autocorrelation">8.b. Spatial Autocorrelation</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#9.-Non-spatial-Analysis">9. Non-spatial Analysis</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#10.-Spatial-Analysis">10. Spatial Analysis</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="stata_analysis_qt_panel.html">Stata Analysis of NYC Leading Pedestrian Interval Signal (LPIs)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stata_spatial_regression_qt.html">Calculate Contiguity and Inverse Distance matrix</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stata_spatial_regression_qt.html#Use-saved-matrix">Use saved matrix</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stata_spatial_regression_qt.html#Non-spatial-Models">Non-spatial Models</a></li>
 </ul>
 
             
@@ -443,6 +446,7 @@ div.rendered_html tbody tr:hover {
 <span class="n">Professor</span> <span class="n">Partha</span> <span class="n">Deb</span>
 </pre></div>
 </div>
+<p>Thesis had been submitted. A link to the thesis will be added here as soon as I get it.</p>
 <div class="section" id="Abstract">
 <h2>Abstract<a class="headerlink" href="#Abstract" title="Permalink to this headline">¶</a></h2>
 <p style="text-align: justify;"><p>I evaluated the impact of the phased introduction of Leading Pedestrian Interval Signals (LPIs) on collision and injury outcomes at 12,987 signalized traffic intersections in New York City over the course of 25 quarters from 2012 to 2018. An intersection is treated when a LPIs is installed to give pedestrians lead time to cross the street before vehicles are allowed to move. Outcomes from NYPD’s Motor Vehicle Collisions data were matched to signalized intersections. I hypothesize that LPIs would
@@ -816,7 +820,7 @@ C:\Users\jerem
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_21_1.png" src="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_21_1.png" />
+<img alt="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_22_1.png" src="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_22_1.png" />
 </div>
 </div>
 <p>First, we have to check the CRS (coordinate reference system) of the shapefile. This is important because all the other shapefiles have to be on the same projection in order to do spatial joins and identify nearest neighbors. For more information on projections, you can watch this <a class="reference external" href="https://youtu.be/KUF_Ckv8HbE">short video</a> and read this <a class="reference external" href="https://www.earthdatascience.org/courses/earth-analytics-python/spatial-data-vector-shapefiles/intro-to-coordinate-reference-systems-python/">document</a>
@@ -892,7 +896,7 @@ from <a class="reference external" href="https://www.earthdatascience.org">Earth
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_30_1.png" src="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_30_1.png" />
+<img alt="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_31_1.png" src="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_31_1.png" />
 </div>
 </div>
 <p>If you look at both plots again, you will notice that the axes labels are different. This is due to the different CRS.</p>
@@ -5211,7 +5215,7 @@ mi_latlong |                                     year
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_202_1.png" src="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_202_1.png" />
+<img alt="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_203_1.png" src="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_203_1.png" />
 </div>
 </div>
 <div class="nbinput nblast docutils container">
@@ -5263,7 +5267,7 @@ mi_latlong |                                     year
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_206_0.png" src="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_206_0.png" />
+<img alt="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_207_0.png" src="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_207_0.png" />
 </div>
 </div>
 <div class="nbinput docutils container">
@@ -8743,7 +8747,7 @@ result          file | &lt;data in memory not named&gt;
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_336_0.png" src="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_336_0.png" />
+<img alt="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_337_0.png" src="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_337_0.png" />
 </div>
 </div>
 <p>The shapefile is required to calculate contiguity matrix in Stata</p>
@@ -9122,7 +9126,7 @@ result          file | &lt;data in memory not named&gt;
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_360_0.png" src="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_360_0.png" />
+<img alt="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_361_0.png" src="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_361_0.png" />
 </div>
 </div>
 <p>Problem here is that the voronoi polygons extends far out from NYC’s boundaries. Therefore, we will use <code class="docutils literal notranslate"><span class="pre">geopandas</span></code>’s <code class="docutils literal notranslate"><span class="pre">overlay</span></code> to “cut” the borough shape out.</p>
@@ -9259,7 +9263,7 @@ dtype: int64
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_371_0.png" src="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_371_0.png" />
+<img alt="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_372_0.png" src="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_372_0.png" />
 </div>
 </div>
 <div class="nbinput docutils container">
@@ -9385,7 +9389,7 @@ dtype: int64
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_380_0.png" src="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_380_0.png" />
+<img alt="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_381_0.png" src="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_381_0.png" />
 </div>
 </div>
 <div class="nbinput docutils container">
@@ -9408,7 +9412,7 @@ dtype: int64
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_381_0.png" src="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_381_0.png" />
+<img alt="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_382_0.png" src="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_382_0.png" />
 </div>
 </div>
 <div class="nbinput docutils container">
@@ -9431,7 +9435,7 @@ dtype: int64
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_382_0.png" src="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_382_0.png" />
+<img alt="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_383_0.png" src="_images/Impact-Evaluation-of-Leading-Pedestrian-Interval-Signals_383_0.png" />
 </div>
 </div>
 </div>
@@ -9439,18 +9443,6 @@ dtype: int64
 <h3>8.b. Spatial Autocorrelation<a class="headerlink" href="#8.b.-Spatial-Autocorrelation" title="Permalink to this headline">¶</a></h3>
 <p>“The concept of spatial autocorrelation relates to the combination of two types of similarity: spatial similarity and attribute similarity. Although there are many different measures of spatial autocorrelation, they all combine these two types of simmilarity into a summary measure.” source: <a class="reference external" href="http://darribas.org/gds_scipy16/ipynb_md/04_esda.html">http://darribas.org/gds_scipy16/ipynb_md/04_esda.html</a></p>
 </div>
-</div>
-<div class="section" id="9.-Non-spatial-Analysis">
-<h2>9. Non-spatial Analysis<a class="headerlink" href="#9.-Non-spatial-Analysis" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li>stata</li>
-</ul>
-</div>
-<div class="section" id="10.-Spatial-Analysis">
-<h2>10. Spatial Analysis<a class="headerlink" href="#10.-Spatial-Analysis" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li>stata</li>
-</ul>
 </div>
 </div>
 
@@ -9461,6 +9453,8 @@ dtype: int64
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="stata_analysis_qt_panel.html" class="btn btn-neutral float-right" title="Stata Analysis of NYC Leading Pedestrian Interval Signal (LPIs)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="index.html" class="btn btn-neutral float-left" title="Welcome to LPIS Evaluation’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

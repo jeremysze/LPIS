@@ -60,12 +60,6 @@ Stratified:
 ![dailyall.png](../manuscripts/dailyall.png)
 
 ---
-
-
-
-
-
-## Figure 2: Average collisions by intersection type
 ![graph_of_time_trend_average_small.png](../manuscripts/graph_of_time_trend_average_small.png)
 
 ---
@@ -93,7 +87,7 @@ The introduction of LPIs reduced collisions and injuries
 ![spatial_autocorrelation.png](../manuscripts/spatial_autocorrelation.png)
 
 ---
-## Goodman-Baconâ€™s general binary treatment difference-in-difference model
+## Goodman-Bacon's general binary treatment difference-in-difference model
 * Simplifying from 25 quarters, we can think of it as there being 3 different groups
     * untreated group $U$
     * early treatment group $k$ that receives treatment at $t^*_k$
@@ -121,3 +115,4 @@ The introduction of LPIs reduced collisions and injuries
 * Intersection fixed effects
 
 ---
+![coefficients_visuals.png](../manuscripts/coefficients_visuals.png)

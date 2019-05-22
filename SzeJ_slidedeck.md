@@ -49,7 +49,6 @@ Stratified:
 ---
 ![dailypedestriansinjuries.png](../manuscripts/dailypedestriansinjuries.png)
 
-
 ---
 ![dailycyclistinjuries.png](../manuscripts/dailycyclistinjuries.png)
 
@@ -76,10 +75,23 @@ The introduction of LPIs reduced collisions and injuries
 
 ---
 ## Phased introduction
-![lpis_year_install.png](../manuscripts/lpis_year_install.png)
+![lpis_year_install_2013_2014.png](../manuscripts/lpis_year_install_2013_2014.png)
 
 ---
+## Phased introduction
+
+![lpis_year_install_2013_2016.png](../manuscripts/lpis_year_install_2013_2016.png)
+
+---
+
+## Phased introduction
+
+![lpis_year_install_2013_2018.png](../manuscripts/lpis_year_install_2013_2018.png)
+
+---
+
 ## Unobserved heterogeneity
+
 ![satalite_screenshot.png](../manuscripts/satalite_screenshot.png)
 
 ---
@@ -87,18 +99,23 @@ The introduction of LPIs reduced collisions and injuries
 ![spatial_autocorrelation.png](../manuscripts/spatial_autocorrelation.png)
 
 ---
-## Goodman-Bacon's general binary treatment difference-in-difference model
+## General binary treatment difference-in-difference model
 * Simplifying from 25 quarters, we can think of it as there being 3 different groups
     * untreated group $U$
     * early treatment group $k$ that receives treatment at $t^*_k$
     * late treatment group $l$ that receives treatment at $t^*_l$
 * Intersections that received the LPIs intervention at a later period after $t^*_l$, hence in the periods before that, they act as controls to intersections that had received LPIs intervention at $t^*_k$
-* 
+---
+
+## General binary treatment difference-in-difference model
+
+![Generalized_DiD.png](../manuscripts/Generalized_DiD.png)
+
 ---
 ## Assumptions
 * Unmeasured determinants of the outcomes were time invariant or group invariant
 * Common trends assumption
-* Timing of the treatment implementation â€œmust be statistically independent of the potential outcomes distributions, conditional on the group-and time-fixed effects
+* Timing of the treatment implementation must be statistically independent of the potential outcomes distributions, conditional on the group-and time-fixed effects
 
 ---
 # 3. Results
@@ -115,4 +132,21 @@ The introduction of LPIs reduced collisions and injuries
 * Intersection fixed effects
 
 ---
-![coefficients_visuals.png](../manuscripts/coefficients_visuals.png)
+
+## NYC Fixed effects DiD (Pooled)
+![coefficients_visuals.png](../manuscripts/NYC_collisions_pooled_visuals.png)
+
+---
+
+## NYC Fixed Effects DiD (Late Night)
+![coefficients_visuals.png](../manuscripts/NYC_collisions_latenight_visuals.png)
+
+---
+
+## NYC Fixed Effects DiD (Non-late night)
+![coefficients_visuals.png](../manuscripts/NYC_collisions_nonlatenight_visuals.png)
+
+---
+
+## Spatial Lagged Overall Impact Fixed Effects DiD (Manhattan)
+![coefficients_visuals.png](../manuscripts/Manhattan_collisions_overall_visuals.png)

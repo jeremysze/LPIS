@@ -44,6 +44,12 @@ Stratified:
 ![dailycollisions.png](../manuscripts/dailycollisions.png)
 
 ---
+dailycollisions_stratified
+
+![dailycollisions_stratified.png](../manuscripts/dailycollisions_stratified.png)
+
+---
+
 ![dailypersonsinjuries.png](../manuscripts/dailypersonsinjuries.png)
 
 ---

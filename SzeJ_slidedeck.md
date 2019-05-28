@@ -44,12 +44,9 @@ Stratified:
 ![dailycollisions.png](../manuscripts/dailycollisions.png)
 
 ---
-dailycollisions_stratified
-
 ![dailycollisions_stratified.png](../manuscripts/dailycollisions_stratified.png)
 
 ---
-
 ![dailypersonsinjuries.png](../manuscripts/dailypersonsinjuries.png)
 
 ---
@@ -102,7 +99,11 @@ The introduction of LPIs reduced collisions and injuries
 
 ---
 ## Spatial autocorrelation
-![spatial_autocorrelation.png](../manuscripts/spatial_autocorrelation.png)
+![NYC_collisions_deciles.png](../manuscripts/NYC_collisions_deciles.png)
+
+---
+## Spatial autocorrelation
+![NYC_collisions_deciles_lagged.png](../manuscripts/NYC_collisions_deciles_lagged.png)
 
 ---
 ## General binary treatment difference-in-difference model
@@ -140,19 +141,33 @@ The introduction of LPIs reduced collisions and injuries
 ---
 
 ## NYC Fixed effects DiD (Pooled)
-![coefficients_visuals.png](../manuscripts/NYC_collisions_pooled_visuals.png)
+![NYC_collisions_pooled_visuals.png](../manuscripts/NYC_collisions_pooled_visuals.png)
+
+---
+## NYC Fixed effects DiD (Pooled)
+![NYC_collisions_pooled_visuals_percent.png](../manuscripts/NYC_collisions_pooled_visuals_percent.png)
 
 ---
 
 ## NYC Fixed Effects DiD (Late Night)
-![coefficients_visuals.png](../manuscripts/NYC_collisions_latenight_visuals.png)
+![NYC_collisions_latenight_visuals.png](../manuscripts/NYC_collisions_latenight_visuals.png)
 
 ---
 
 ## NYC Fixed Effects DiD (Non-late night)
-![coefficients_visuals.png](../manuscripts/NYC_collisions_nonlatenight_visuals.png)
+![NYC_collisions_nonlatenight_visuals.png](../manuscripts/NYC_collisions_nonlatenight_visuals.png)
 
 ---
-
 ## Spatial Lagged Overall Impact Fixed Effects DiD (Manhattan)
-![coefficients_visuals.png](../manuscripts/Manhattan_collisions_overall_visuals.png)
+![Manhattan_collisions_overall_visuals.png](../manuscripts/Manhattan_collisions_overall_visuals.png)
+
+---
+## Spatial Lagged Overall Impact Fixed Effects DiD (Manhattan)
+![Manhattan_collisions_overall_visuals_percent.png](../manuscripts/Manhattan_collisions_overall_visuals_percent.png)
+
+---
+## Questions? 
+### Thank you!
+[Jeremy.Sze@outlook.com](mailto:Jeremy.Sze@outlook.com)
+
+[https://jeremysze.github.io](https://jeremysze.github.io)

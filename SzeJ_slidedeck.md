@@ -70,7 +70,7 @@ Stratified:
 The introduction of LPIs reduced collisions and injuries
 
 ---
-# 2. Challenges and Solution
+  # 2. Challenges and Solution
 
 ---
 ## Selective implementation
@@ -82,19 +82,14 @@ The introduction of LPIs reduced collisions and injuries
 
 ---
 ## Phased introduction
-
 ![lpis_year_install_2013_2016.png](../manuscripts/lpis_year_install_2013_2016.png)
 
 ---
-
 ## Phased introduction
-
 ![lpis_year_install_2013_2018.png](../manuscripts/lpis_year_install_2013_2018.png)
 
 ---
-
 ## Unobserved heterogeneity
-
 ![satalite_screenshot.png](../manuscripts/satalite_screenshot.png)
 
 ---
@@ -106,15 +101,16 @@ The introduction of LPIs reduced collisions and injuries
 ![NYC_collisions_deciles_lagged.png](../manuscripts/NYC_collisions_deciles_lagged.png)
 
 ---
-## General binary treatment difference-in-difference model
+### General Binary treatment Difference-in-difference model
+
 * Simplifying from 25 quarters, we can think of it as there being 3 different groups
-    * untreated group $U$
-    * early treatment group $k$ that receives treatment at $t^*_k$
-    * late treatment group $l$ that receives treatment at $t^*_l$
-* Intersections that received the LPIs intervention at a later period after $t^*_l$, hence in the periods before that, they act as controls to intersections that had received LPIs intervention at $t^*_k$
+* untreated group $U$
+* early treatment group $k$ that receives treatment at $t^*_k$
+* late treatment group $l$ that receives treatment at $t^*_l$
+
 ---
 
-## General binary treatment difference-in-difference model
+### General Binary treatment Difference-in-difference model
 
 ![Generalized_DiD.png](../manuscripts/Generalized_DiD.png)
 
@@ -127,7 +123,7 @@ The introduction of LPIs reduced collisions and injuries
 ---
 # 3. Results
 ---
-### Model Specifications
+## Model Specifications and controls
 * Indicator for when intersections received LPIs intervention
 * Indicator for when Bike route was built
 * Indicator for when Street Improvement was implemented

@@ -101,7 +101,7 @@ Things that make an intersections safer or more dangerous.
 
 ---
 - This visualization shows what I described. 
-- The intersections that receive late treatment or are untreated become the controls for the early treatment group. 
+- The intersections that receive late treatment (after $t^*_l$) or are untreated become the controls for the early treatment group ($t^*_k$). 
 - My model is an extension of that and it follows LPIs that were implemented across 25 quarters.
 
 ---

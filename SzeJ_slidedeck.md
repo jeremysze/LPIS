@@ -84,7 +84,7 @@ The introduction of LPIs reduced collisions and injuries
 
 ---
 ## Phased introduction
-![lpis_year_install_2013_2016.png](imageslpis_year_install_2013_2016.png)
+![lpis_year_install_2013_2016.png](images/lpis_year_install_2013_2016.png)
 
 ---
 ## Phased introduction
@@ -92,7 +92,7 @@ The introduction of LPIs reduced collisions and injuries
 
 ---
 ## Unobserved heterogeneity
-![satalite_screenshot.png](images//satalite_screenshot.png)
+![satalite_screenshot.png](images/satalite_screenshot.png)
 
 ---
 ## Spatial autocorrelation

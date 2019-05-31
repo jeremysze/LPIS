@@ -2,6 +2,8 @@
 
 <!-- page_number: true -->
 
+<!-- footer:  2019 Pennsylvania Economic Association Annual Conference May 31 2019 -->
+
 Hi Everyone, Thank you for coming to listen to my evaluation of the Impact of Leading pedestrian interval signal in New york city. I am Jeremy Sze and I am a graduate of Hunter College at the City University of New York. 
 
 ---

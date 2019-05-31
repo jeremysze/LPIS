@@ -17,18 +17,18 @@ Hunter College, The City University of New York
 # 1. Introduction
 
 ---
-![visionzeronyc.png](../manuscripts/visionzeronyc.png)
-![nyc_streets.jpg](../manuscripts/nyc_streets.jpg)
+![visionzeronyc.png](images/visionzeronyc.png)
+![nyc_streets.jpg](images/nyc_streets.jpg)
 <sub><sub><sub><sup> Source: https://www.flickr.com/photos/romankphoto/</sup></sub></sub></sub>
 
 ---
 ## Leading Pedestrian Interval Signals (LPIs)
-![LPIS_visualization.png](../manuscripts/LPIS_visualization.png)
+![LPIS_visualization.png](images/LPIS_visualization.png)
 
 <sub><sub><sub><sup> Source: [https://nacto.org/publication/urban-street-design-guide/intersection-design-elements/traffic-signals/leading-pedestrian-interval/](https://nacto.org/publication/urban-street-design-guide/intersection-design-elements/traffic-signals/leading-pedestrian-interval/)</sup></sub></sub></sub>
 
 ---
-![lpis%20map2.png](../manuscripts/lpis%20map2.png)
+![lpis%20map2.png](images/lpis%20map2.png)
 
 ---
 ## NYPD Motor Vehicle Collisions
@@ -43,28 +43,28 @@ Stratified:
 * 5.00 a.m. to 10.59 p.m.
 
 ---
-![dailycollisions.png](../manuscripts/dailycollisions.png)
+![dailycollisions.png](images/dailycollisions.png)
 
 ---
-![dailycollisions_stratified.png](../manuscripts/dailycollisions_stratified.png)
+![dailycollisions_stratified.png](images/dailycollisions_stratified.png)
 
 ---
-![dailypersonsinjuries.png](../manuscripts/dailypersonsinjuries.png)
+![dailypersonsinjuries.png](images/dailypersonsinjuries.png)
 
 ---
-![dailypedestriansinjuries.png](../manuscripts/dailypedestriansinjuries.png)
+![dailypedestriansinjuries.png](images/dailypedestriansinjuries.png)
 
 ---
-![dailycyclistinjuries.png](../manuscripts/dailycyclistinjuries.png)
+![dailycyclistinjuries.png](images/dailycyclistinjuries.png)
 
 ---
-![dailymotoristinjuries.png](../manuscripts/dailymotoristinjuries.png)
+![dailymotoristinjuries.png](images/dailymotoristinjuries.png)
 
 ---
-![dailyall.png](../manuscripts/dailyall.png)
+![dailyall.png](images/dailyall.png)
 
 ---
-![graph_of_time_trend_average_small.png](../manuscripts/graph_of_time_trend_average_small.png)
+![graph_of_time_trend_average_small.png](images/graph_of_time_trend_average_small.png)
 
 ---
 ## Hypothesis
@@ -76,31 +76,31 @@ The introduction of LPIs reduced collisions and injuries
 
 ---
 ## Selective implementation
-![collision_lpis_overlay.png](../manuscripts/collision_lpis_overlay.png)
+![collision_lpis_overlay.png](images/collision_lpis_overlay.png)
 
 ---
 ## Phased introduction
-![lpis_year_install_2013_2014.png](../manuscripts/lpis_year_install_2013_2014.png)
+![lpis_year_install_2013_2014.png](images/lpis_year_install_2013_2014.png)
 
 ---
 ## Phased introduction
-![lpis_year_install_2013_2016.png](../manuscripts/lpis_year_install_2013_2016.png)
+![lpis_year_install_2013_2016.png](imageslpis_year_install_2013_2016.png)
 
 ---
 ## Phased introduction
-![lpis_year_install_2013_2018.png](../manuscripts/lpis_year_install_2013_2018.png)
+![lpis_year_install_2013_2018.png](images/lpis_year_install_2013_2018.png)
 
 ---
 ## Unobserved heterogeneity
-![satalite_screenshot.png](../manuscripts/satalite_screenshot.png)
+![satalite_screenshot.png](images//satalite_screenshot.png)
 
 ---
 ## Spatial autocorrelation
-![NYC_collisions_deciles.png](../manuscripts/NYC_collisions_deciles.png)
+![NYC_collisions_deciles.png](images//NYC_collisions_deciles.png)
 
 ---
 ## Spatial autocorrelation
-![NYC_collisions_deciles_lagged.png](../manuscripts/NYC_collisions_deciles_lagged.png)
+![NYC_collisions_deciles_lagged.png](images//NYC_collisions_deciles_lagged.png)
 
 ---
 ### General Binary treatment Difference-in-difference model
@@ -114,7 +114,7 @@ The introduction of LPIs reduced collisions and injuries
 
 ### General Binary treatment Difference-in-difference model
 
-![Generalized_DiD.png](../manuscripts/Generalized_DiD.png)
+![Generalized_DiD.png](images/Generalized_DiD.png)
 
 ---
 ## Assumptions
@@ -139,29 +139,29 @@ The introduction of LPIs reduced collisions and injuries
 ---
 
 ## NYC Fixed effects DiD (Pooled)
-![NYC_collisions_pooled_visuals.png](../manuscripts/NYC_collisions_pooled_visuals.png)
+![NYC_collisions_pooled_visuals.png](images/NYC_collisions_pooled_visuals.png)
 
 ---
 ## NYC Fixed effects DiD (Pooled)
-![NYC_collisions_pooled_visuals_percent.png](../manuscripts/NYC_collisions_pooled_visuals_percent.png)
+![NYC_collisions_pooled_visuals_percent.png](images/NYC_collisions_pooled_visuals_percent.png)
 
 ---
 
 ## NYC Fixed Effects DiD (Late Night)
-![NYC_collisions_latenight_visuals.png](../manuscripts/NYC_collisions_latenight_visuals.png)
+![NYC_collisions_latenight_visuals.png](images/NYC_collisions_latenight_visuals.png)
 
 ---
 
 ## NYC Fixed Effects DiD (Non-late night)
-![NYC_collisions_nonlatenight_visuals.png](../manuscripts/NYC_collisions_nonlatenight_visuals.png)
+![NYC_collisions_nonlatenight_visuals.png](images/NYC_collisions_nonlatenight_visuals.png)
 
 ---
 ## Spatial Lagged Overall Impact Fixed Effects DiD (Manhattan)
-![Manhattan_collisions_overall_visuals.png](../manuscripts/Manhattan_collisions_overall_visuals.png)
+![Manhattan_collisions_overall_visuals.png](images/Manhattan_collisions_overall_visuals.png)
 
 ---
 ## Spatial Lagged Overall Impact Fixed Effects DiD (Manhattan)
-![Manhattan_collisions_overall_visuals_percent.png](../manuscripts/Manhattan_collisions_overall_visuals_percent.png)
+![Manhattan_collisions_overall_visuals_percent.png](images/Manhattan_collisions_overall_visuals_percent.png)
 
 ---
 ## Questions? 

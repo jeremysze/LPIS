@@ -2,6 +2,8 @@
 
 <!-- page_number: true -->
 
+<!-- footer:  2019 Pennsylvania Economic Association Annual Conference May 31 2019 -->
+
 # An Evaluation of the Impact of Leading Pedestrian Interval Signals in NYC
 
 ### Jeremy J. Sze
